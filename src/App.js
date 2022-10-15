@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Nav />
       <Yeezy350V2 cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount}/>
-      <Cart cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount}/>
+      {/*<Cart cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount}/>*/}
     </div>
   );
 }
