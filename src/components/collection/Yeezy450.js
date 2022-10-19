@@ -4,14 +4,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Yeezy350V2 = (props) => {
+const Yeezy450 = (props) => {
   const { cartCount, setCartCount, cartItems, setCartItems } = props;
 
   const [shoeData, setShoeData] = useState({
     id: uniqid(),
-    name: "Adidas Yeezy Boost 350 V2",
-    price: 220,
-    size: 11,
+    name: "Adidas Yeezy Boost 450",
+    price: 200,
+    size: null,
     description:
       "The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit. The post-dyed monofilament side stripe is woven into the upper. Reflective threads are woven into the laces. The midsole utilizes adidas’ innovative BOOST™ technology.",
     quantity: 1,
@@ -106,4 +106,4 @@ const Yeezy350V2 = (props) => {
   );
 };
 
-export default Yeezy350V2;
+export default Yeezy450;
