@@ -46,7 +46,7 @@ const Yeezy350V2 = (props) => {
   };
 
   const toggleActiveSize = (e) => {
-    
+
     
     if (!e.target.classList.contains('active')) {
       e.target.classList.add('active')
@@ -69,13 +69,22 @@ const Yeezy350V2 = (props) => {
           <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg" />
         </div>
         <div className="container-fluid col-md-4 justify-content-sm-center">
-          <h2 className="mb-5">{shoeData.name}</h2>
+          <h2 className="mb-4">{shoeData.name}</h2>
+          <h4 className="mb-4">${shoeData.price}</h4>
           <div className="container">
           <h5>Select Size</h5>
-          <button onClick={handleSizeChange} value={4} key={4} className="btn btn-block btn-outline-dark m-2 sizeBtn"> 4 US</button>
-          <button onClick={handleSizeChange} value={5} key={5} className="btn btn-block btn-outline-dark m-2 sizeBtn">5 US</button>
-          <button onClick={handleSizeChange} value={6} key={6} className="btn btn-block btn-outline-dark m-2 sizeBtn">6 US</button>
-          <button onClick={handleSizeChange} value={7} key={7} className="btn btn-block btn-outline-dark m-2 sizeBtn">7 US</button>
+          <label className="btn btn-block btn-outline-dark m-2 sizeBtn">
+            <input onClick={handleSizeChange} type="radio" name="size" id="size4" value={4} /> 4 US
+          </label>
+          <label className="btn btn-block btn-outline-dark m-2 sizeBtn">
+            <input onClick={handleSizeChange} type="radio" name="size" id="size5" value={5}/> 5 US
+          </label>
+          <label className="btn btn-block btn-outline-dark m-2 sizeBtn">
+            <input onClick={handleSizeChange} type="radio" name="size" id="size6" value={6}/> 6 US
+          </label>
+          <label className="btn btn-block btn-outline-dark m-2 sizeBtn">
+            <input onClick={handleSizeChange} type="radio" name="size" id="size7" value={7}/> 7 US
+          </label>
           </div>
           <div className="container">
           <button onClick={handleSizeChange} value={8} key={8} className="btn btn-block btn-outline-dark m-2 sizeBtn">8 US</button>
