@@ -4,16 +4,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Yeezy350V2 = (props) => {
+const Yeezy500 = (props) => {
   const { setCartCount, cartItems, setCartItems } = props;
 
   const [shoeData, setShoeData] = useState({
     id: uniqid(),
-    name: "Adidas Yeezy Boost 350 V2",
-    price: 220,
-    size: 11,
+    name: "Adidas Yeezy 700 V3",
+    price: 210,
+    size: null,
     description:
-      "The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit. The post-dyed monofilament side stripe is woven into the upper. Reflective threads are woven into the laces. The midsole utilizes adidas’ innovative BOOST™ technology.",
+      "The YEEZY 700 V3 features an upper composed of monofilament engineered mesh with RPU overlays for structure and durability. The RPU cage has glow in the dark features that provide a unique look and feel. The bootie construction provides a snug fit while the tongue features reflectivity that emits light in darkness. The PU encapsulated EVA midsole provides comfort and durability, and the herringbone rubber outsole offers unique design cues and improved traction.",
     quantity: 1,
   });
 
@@ -73,7 +73,7 @@ const Yeezy350V2 = (props) => {
       <ToastContainer autoClose={1000} theme="dark"/>
       <div className="row">
         <div className="col-md-6">
-          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg" />
+          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558187.jpg" />
         </div>
         <div className="container-fluid col-md-4 justify-content-sm-center">
           <h2 className="mb-4">{shoeData.name}</h2>
@@ -106,4 +106,4 @@ const Yeezy350V2 = (props) => {
   );
 };
 
-export default Yeezy350V2;
+export default Yeezy700V3;

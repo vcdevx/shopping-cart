@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Yeezy450 = (props) => {
-  const { cartCount, setCartCount, cartItems, setCartItems } = props;
+  const { setCartCount, cartItems, setCartItems } = props;
 
   const [shoeData, setShoeData] = useState({
     id: uniqid(),
@@ -13,7 +13,7 @@ const Yeezy450 = (props) => {
     price: 200,
     size: null,
     description:
-      "The YEEZY BOOST 350 V2 features an upper composed of re-engineered Primeknit. The post-dyed monofilament side stripe is woven into the upper. Reflective threads are woven into the laces. The midsole utilizes adidas’ innovative BOOST™ technology.",
+      "The YEEZY 450, the first YEEZY model to be made in Germany, features a unique design language with an industry-leading technology that uses advanced automated manufacturing throughout the production process. The one-piece premium knit and sock-like construction provides and adaptable fit with exceptional comfort. Meanwhile, a soft PU-injected midsole compound offers high-performance rebound and cushioning, delivering an innovative, one-of-a-kind aesthetic.",
     quantity: 1,
   });
 
@@ -73,7 +73,7 @@ const Yeezy450 = (props) => {
       <ToastContainer autoClose={1000} theme="dark"/>
       <div className="row">
         <div className="col-md-6">
-          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg" />
+          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/601718.jpg" />
         </div>
         <div className="container-fluid col-md-4 justify-content-sm-center">
           <h2 className="mb-4">{shoeData.name}</h2>
