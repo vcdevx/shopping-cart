@@ -4,16 +4,16 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const YeezySlide = (props) => {
+const YeezyQNTM = (props) => {
   const { setCartCount, cartItems, setCartItems } = props;
 
   const [shoeData, setShoeData] = useState({
     id: uniqid(),
-    name: "Adidas Yeezy Slide",
-    price: 70,
+    name: "Adidas Yeezy QNTM",
+    price: 210,
     size: null,
     description:
-      "The YEEZY SLIDE features injected EVA foam to provide lightweight durability, the soft top layer in the footbed offers immediate step in comfort. The outsole utilizes strategic groove placement for optimal comfort and traction.",
+      "The YZY QNTM Amber Tint features an upper composed of embroidered mono mesh that provides a soft, resilient thread with a synthetic suede overlay that offers toe protection and durability. Reflective material throughout the inner webbing and heel counter emits light in darkness. The YZY QNTM elevates the cushioning experience with a re-engineered full-length drop-in boost midsole that provides optimal comfort where consumers need it most. A semi-translucent clear TPU cage wraps the boost and adds a distinct design element to the model while the herringbone patterned rubber outsole offers optimal traction.",
     quantity: 1,
   });
 
@@ -73,7 +73,7 @@ const YeezySlide = (props) => {
       <ToastContainer autoClose={1000} theme="dark"/>
       <div className="row">
         <div className="col-md-6">
-          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600879.jpg" />
+          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600859.jpg" />
         </div>
         <div className="container-fluid col-md-4 justify-content-sm-center">
           <h2 className="mb-4">{shoeData.name}</h2>
@@ -106,4 +106,4 @@ const YeezySlide = (props) => {
   );
 };
 
-export default YeezySlide;
+export default YeezyQNTM;
