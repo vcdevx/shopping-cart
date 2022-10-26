@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./App";
+import App from "../../App";
+import Shop from "../Shop";
+import Home from "../Home";
+import About from "../About";
 import Yeezy350V2 from "./Yeezy350V2";
 import Yeezy350V2CMPCT from "./Yeezy350V2CMPCT";
 import Yeezy450 from "./Yeezy450";
@@ -17,8 +20,11 @@ const RouteSwitch = () => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route index element={<App />} >
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     );

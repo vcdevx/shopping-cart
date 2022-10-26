@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Yeezy500 = (props) => {
+const Yeezy700V3 = (props) => {
   const { setCartCount, cartItems, setCartItems } = props;
 
   const [shoeData, setShoeData] = useState({

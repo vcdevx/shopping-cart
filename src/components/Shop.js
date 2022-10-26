@@ -1,76 +1,77 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
 
     const [inventory, setInventory] = useState([
         {
-            id: 0,
+            id: 'Yeezy350V2',
             name: 'Adidas Yeezy Boost 350 V2',
             price: 220,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg',
         },
         {
-            id: 1,
+            id: 'Yeezy450',
             name: 'Adidas Yeezy Boost 450',
             price: 200,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/601718.jpg',
         },
         {
-            id: 2,
+            id: 'Yeezy500',
             name: 'Adidas Yeezy Boost 500',
             price: 210,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600865.jpg',
         },
         {
-            id: 3,
+            id: 'Yeezy700',
             name: 'Adidas Yeezy Boost 700',
             price: 330,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/527125.jpg',
         },
         {
-            id: 4,
+            id: 'Yeezy700V2',
             name: 'Adidas Yeezy Boost 700 V2',
             price: 210,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558185.jpg',
         },
         {
-            id: 5,
+            id: 'Yeezy700V3',
             name: 'Adidas Yeezy Boost 700 V3',
             price: 210,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558187.jpg',
         },
         {
-            id: 6,
+            id: 'Yeezy700MNVN',
             name: 'Adidas Yeezy Boost 700 MNVN',
             price: 230,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558186.jpg',
         },
         {
-            id: 7,
+            id: 'YeezyFoamRunner',
             name: 'Adidas Yeezy Foam Runner',
             price: 90,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600876.jpg',
         },
         {
-            id: 8,
+            id: 'YeezySlide',
             name: 'Adidas Yeezy Slide',
             price: 70,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600879.jpg',
         },
         {
-            id: 9,
+            id: 'YeezyKnitRunner',
             name: 'Adidas Yeezy Knit Runner Boot',
             price: 400,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/598574.jpg',
         },
         {
-            id: 10,
+            id: 'YeezyV2CMPCT',
             name: 'Adidas Yeezy 350 V2 CMPCT',
             price: 220,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600901.jpg',
         },
         {
-            id: 11,
+            id: 'YeezyQNTM',
             name: 'Adidas Yeezy QNTM',
             price: 210,
             image: 'https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600859.jpg',
@@ -78,8 +79,9 @@ const Shop = () => {
     ])
 
     return (
-        <div className="container-md row row-cols-1 row-cols-md-3 g-4">
+        <div className="container-fluid row row-cols-1 row-cols-md-3 g-4 mt-5">
             {inventory.map((item) => (
+                <Link to={`/shop/${item.id}`}>
                 <div className="col">
                 <div className="card" style={{width: 18 + 'rem'}} key={item.id}>
                 <img src={item.image} className="card-img-top" alt={item.name}/>
@@ -89,7 +91,8 @@ const Shop = () => {
                   <button className="btn btn-primary">Buy</button>
                 </div>
               </div>     
-              </div>         
+              </div>
+              </Link>         
             ))}
         </div>
     )
