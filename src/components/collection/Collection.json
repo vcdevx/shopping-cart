@@ -1,0 +1,122 @@
+[
+    {
+        "id": 0,
+        "name": "Adidas Boost 350 V2",
+        "price": 220,
+        "size": null,
+        "description":
+          "The BOOST 350 V2 features an upper composed of re-engineered Primeknit. The post-dyed monofilament side stripe is woven into the upper. Reflective threads are woven into the laces. The midsole utilizes adidas’ innovative BOOST™ technology.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg"
+      },
+      {
+        "id": 1,
+        "name": "Adidas Boost 350 V2 CMPCT",
+        "price": 220,
+        "size": null,
+        "description":
+          "The 350 V2 CMPCT Slate Blue is highlighted by an engineered 3D knitted upper that provides a tight sock-like fit and premium lockdown support while no-tie stretch laces allows for easy on and off wear. The midsole utilizes adidas’ innovative BOOST™ technology to off the ultimate underfoot cushioning experience. The YZY 350 V2 CMPCT is made with a series of recycled materials, and at least 50% of the upper features recycled content, this product represents just one of our solutions to help end plastic waste.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600901.jpg"
+      },
+    {
+      "id": 2,
+      "name": "Adidas 450",
+      "price": 200,
+      "size": null,
+      "description":
+        "The 450, the first YEEZY model to be made in Germany, features a unique design language with an industry-leading technology that uses advanced automated manufacturing throughout the production process. The one-piece premium knit and sock-like construction provides and adaptable fit with exceptional comfort. Meanwhile, a soft PU-injected midsole compound offers high-performance rebound and cushioning, delivering an innovative, one-of-a-kind aesthetic.",
+      "quantity": 1,
+      "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/601718.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Adidas Boost 500",
+        "price": 210,
+        "size": null,
+        "description":
+          "The Boost 500 features an upper composed of full-grain leather and suede overlays that offer a premium finish, soft hand feel, along with a supportive and durable wear. Mesh upper provides lightweight breathability and comfort where it is needed, while reflective piping details add unique design cues and visual interest. A rubber wrap along the midsole provides support and abrasion resistance. The Adiprene+ cushioning absorbs impact and optimizes rebound while a light rubber outsole provides traction.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600865.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Adidas Boost 700",
+        "price": 330,
+        "size": null,
+        "description":
+          "The BOOST 700 features an upper composed of suede overlays and premium leather with mesh underlays and reflective heel and Three Stripe details. The full-length drop in boost midsole provides comfort and stability.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/527125.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Adidas Boost 700 MNVN",
+        "price": 330,
+        "size": null,
+        "description":
+          "The BOOST 700 MNVN features an upper composed of lightweight polyester with no-sew overlays offering enhanced breathability, flexibility and comfort. No-tie bungee laces allows for easy on and off wear. Reflective material emits light in darkness throughout specific areas of the model. The full-length drop-in Boost midsole provides the ultimate underfoot cushioning experience, while the PU midsole adds comfort and durability.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558186.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Adidas Boost 700 V2",
+        "price": 210,
+        "size": null,
+        "description":
+          "The BOOST 700 V2 features an upper composed of roller knit and premium leather with nubuck overlays with reflective details throughout. The full-length drop in boost midsole provides comfort and stability.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558185.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Adidas Boost 700 V3",
+        "price": 210,
+        "size": null,
+        "description":
+          "The BOOST 700 V2 features an upper composed of roller knit and premium leather with nubuck overlays with reflective details throughout. The full-length drop in boost midsole provides comfort and stability.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558187.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Adidas Boost Foam Runner",
+        "price": 90,
+        "size": null,
+        "description":
+          "The FOAM RUNNER features injected EVA foam to provide lightweight durability. This model is made using algae harvesting technology that helps to keep lakes clean. The soft top layer in the footbed offers immediate step in comfort. The strategically mapped vents around the foot provide air flow and breathability. Additionally, the YZY FOAM RUNNER will usher in a new box construction that does not require an additional shipping box when shipped, which leads to less cardboard material waste.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600876.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Adidas Knit Runner Boot",
+        "price": 400,
+        "size": null,
+        "description":
+          "The YZY KNIT RNR BT Sulfur features a first of its kind laceless construction with a midfoot tuck execution that allows the premium knit upper to hug the contours of the foot, leading to an adaptable fit with easy on and off wear. The canvas upper shaft has 150 grams of 3M thinsulate to lock in heat, while a waterproof membrane keeps the foot dry. A soft PU toe reinforcement offers stability and protection. Additionally, an EVA midsole offers a cushioned feel for all-day comfort, and the rubber outsole offers unique design cues and traction.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/598574.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Adidas QNTM",
+        "price": 210,
+        "size": null,
+        "description":
+          "The YZY QNTM Amber Tint features an upper composed of embroidered mono mesh that provides a soft, resilient thread with a synthetic suede overlay that offers toe protection and durability. Reflective material throughout the inner webbing and heel counter emits light in darkness. The YZY QNTM elevates the cushioning experience with a re-engineered full-length drop-in boost midsole that provides optimal comfort where consumers need it most. A semi-translucent clear TPU cage wraps the boost and adds a distinct design element to the model while the herringbone patterned rubber outsole offers optimal traction.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600859.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Adidas Slide",
+        "price": 70,
+        "size": null,
+        "description":
+          "The SLIDE features injected EVA foam to provide lightweight durability, the soft top layer in the footbed offers immediate step in comfort. The outsole utilizes strategic groove placement for optimal comfort and traction.",
+        "quantity": 1,
+        "img": "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/600879.jpg"
+      }
+]
