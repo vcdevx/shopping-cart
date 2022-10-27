@@ -22,41 +22,33 @@ const Nav = (props) => {
     <nav className="Nav navbar navbar-expand-md bg-light">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navBarSupportedContent">
-          <Link to="/">
-            <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
               <img src={YZY} alt="Yeezy Logo" width="66" height="20" />
-            </a>
           </Link>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-          <Link to="/">
+          <Link className="nav-link active" aria-current="page" to="/">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
                 Home
-              </a>
-              
             </li>
             </Link>
             <li className="nav-item">
-              <Link to="/shop">
-                <a className="nav-link" href="#">
+              <Link className="nav-link" to="/shop">
                   Shop
-                </a>{" "}
+                  {" "}
               </Link>
             </li>
             <li className="nav-item">
-                <Link to="/about">
-              <a className="nav-link" href="#">
+                <Link className="nav-link" to="/about">
                 About
-              </a>
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+                <Link className="nav-link" to="/cart">
                 <i className="fa-solid fa-lg fa-bag-shopping"></i>
                 <span className="badge rounded-pill badge-notification bg-danger">
                   {cartCount}
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

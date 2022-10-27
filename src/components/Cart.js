@@ -42,7 +42,7 @@ const Cart = (props) => {
             <h2>Shopping Bag</h2>
             <div className="container">
                 {cartItems.map((item) => (
-                    <div className="card" key={item.id}>
+                    <div className="card" key={item.shoeId}>
                         <div className="row">
                             <div className="col">
                                 <img src='https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg'/>

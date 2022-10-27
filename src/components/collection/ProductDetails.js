@@ -1,9 +1,67 @@
-import React from "react";
-import Collection from './Collection.json'
+import React, { useState } from "react";
+import Collection from './Collection.json';
+import uniqid from "uniqid";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const ProductDetails = () => {
+const ProductDetails = (props) => {
 
-    const shoeData = Collection;
+    const [sizeSelected, setSizeSelected] = useState(false);
+
+    const {shoeId, cartItems, setCartItems, cartCount, setCartCount} = props;
+
+    let shoeData = Collection.find((i) => i.id === shoeId);
+
+    const handleAddToCart = (e) => {
+        handleSizeChange(e)
+        console.log(shoeData)
+        let item = cartItems.find(
+          (shoe) => shoe.name === shoeData.name && shoe.size === shoeData.size
+        );
+        if (item) {
+          console.log(item.name);
+          item.quantity += 1;
+          setCartItems([...cartItems.filter((shoe) => shoe !== item), item]);
+        } else {
+          shoeData = { ...shoeData, shoeId: uniqid() };
+          setCartItems([...cartItems, shoeData]);
+        }
+    
+        notify();
+        updateCartCount();
+      };
+    
+      const handleSizeChange = (e) => {
+        
+        let newSize = parseInt(sizeSelected);
+        shoeData = { ...shoeData, size: newSize };
+        toggleSizeSelect(e);
+      };
+    
+      const toggleSizeSelect = (e) => {
+        let newSize = parseInt(e.target.value);
+        setSizeSelected(newSize)
+      };
+    
+      let toggleActiveSize = (e) => {
+        if (!e.target.classList.contains('active')) {
+          e.target.classList.add('active')
+        }
+      }
+    
+      const updateCartCount = () => {
+        let totalItems = 0;
+        for (let i = 0; cartItems.length > i; i++) {
+          totalItems += cartItems[i].quantity;
+        }
+    
+        setCartCount(totalItems);
+      };
+    
+      const notify = ()=>{
+    
+        toast(`${shoeData.name} added to cart!`)
+    }
 
     return (
     <div className="container mt-5">
