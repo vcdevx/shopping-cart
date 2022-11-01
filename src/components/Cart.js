@@ -31,10 +31,9 @@ const Cart = (props) => {
 
     const removeItem = (e) => {
         let key = e.target.getAttribute('id')
-        let item = cartItems.find(shoe => shoe.id === key)
+        let item = cartItems.find(shoe => shoe.shoeId === key)
         let newCart = [...cartItems.filter(shoe => shoe !== item)]
         setCartItems(newCart)
-        console.log(cartItems)
     }
 
     return (
@@ -45,14 +44,14 @@ const Cart = (props) => {
                     <div className="card" key={item.shoeId}>
                         <div className="row">
                             <div className="col">
-                                <img src='https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg'/>
+                                <img src={item.img}/>
                                 </div>
                                 <div className="col">
                         <p>{item.name}</p>
                         <p>{item.size}</p>
                         <p>Quantity: {item.quantity}</p>
                         </div>
-                        <button onClick={removeItem} id={item.id}>Remove</button>
+                        <button onClick={removeItem} id={item.shoeId}>Remove</button>
                         </div>
                     </div>
                 ))}

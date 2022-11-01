@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import Collection from './Collection.json';
 import uniqid from "uniqid";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,9 +9,10 @@ const ProductDetails = (props) => {
 
     const [sizeSelected, setSizeSelected] = useState(false);
 
-    const {shoeId, cartItems, setCartItems, cartCount, setCartCount} = props;
+    const {cartItems, setCartItems, setCartCount} = props;
+    let { id } = useParams();
 
-    let shoeData = Collection.find((i) => i.id === shoeId);
+    let shoeData = Collection.find((i) => i.id == id);
 
     const handleAddToCart = (e) => {
         handleSizeChange(e)
@@ -65,10 +67,10 @@ const ProductDetails = (props) => {
 
     return (
     <div className="container mt-5">
-      <ToastContainer autoClose={1000} theme="dark"/>
+      <ToastContainer autoClose={500} theme="dark"/>
       <div className="row">
         <div className="col-md-6">
-          <img src="https://preview.thenewsmarket.com/Previews/ADID/StillAssets/320x320/558271.jpg" />
+          <img src={shoeData.img} />
         </div>
         <div className="container-fluid col-md-4 justify-content-sm-center">
           <h2 className="mb-4">{shoeData.name}</h2>
