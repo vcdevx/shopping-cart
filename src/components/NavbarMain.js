@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import YZY from "../images/YZY.png";
 import { Link } from "react-router-dom";
 
-const Nav = (props) => {
+const NavbarMain = (props) => {
   const { cartCount, setCartCount, cartItems, setCartItems } = props;
 
   useEffect(() => {
@@ -19,12 +23,16 @@ const Nav = (props) => {
   };
 
   return (
-    <nav className="Nav navbar navbar-expand-md bg-light">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse" id="navBarSupportedContent">
+    <Navbar bg="light" expand="md">
+        <Container fluid>
+          <Navbar.Brand>
           <Link className="navbar-brand" to="/">
               <img src={YZY} alt="Yeezy Logo" width="66" height="20" />
           </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <Link className="nav-link active" aria-current="page" to="/">
             <li className="nav-item">
@@ -50,10 +58,11 @@ const Nav = (props) => {
               </Link>
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+    </Navbar>
   );
 };
 
-export default Nav;
+export default NavbarMain;

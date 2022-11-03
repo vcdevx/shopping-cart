@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
-import Nav from './components/Nav'
+import Nav from './components/NavbarMain'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import Cart from './components/Cart'
