@@ -41,16 +41,19 @@ const Cart = (props) => {
             <h2>Shopping Bag</h2>
             <div className="container">
                 {cartItems.map((item) => (
-                    <div className="card" key={item.shoeId}>
+                    <div className="border-top border-bottom" key={item.shoeId}>
                         <div className="row">
-                            <div className="col">
-                                <img src={item.img}/>
+                            <div className="col-sm-2">
+                                <img src={item.img} class="img-fluid p-3"/>
                                 </div>
-                                <div className="col">
+                                <div className="col-sm-8 p-3">
                         <p>{item.name}</p>
                         <p>{item.size}</p>
                         <p>Quantity: {item.quantity}</p>
                         </div>
+                        <div className="col-sm-2">
+                            <p>{item.price}</p>
+                            </div>
                         <button onClick={removeItem} id={item.shoeId}>Remove</button>
                         </div>
                     </div>

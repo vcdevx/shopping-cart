@@ -28,7 +28,8 @@ const ProductDetails = (props) => {
           shoeData = { ...shoeData, shoeId: uniqid() };
           setCartItems([...cartItems, shoeData]);
         }
-    
+
+        setSizeSelected(false);
         notify();
         updateCartCount();
       };
