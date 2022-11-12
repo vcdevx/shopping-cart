@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import YZY from "../images/YZY.png";
+import AdiLogo from "../images/AdiLogo.png";
 import { Link } from "react-router-dom";
 
 const NavbarMain = (props) => {
@@ -27,7 +27,7 @@ const NavbarMain = (props) => {
         <Container fluid>
           <Navbar.Brand>
           <Link className="navbar-brand" to="/">
-              <img src={YZY} alt="Yeezy Logo" width="66" height="20" />
+              <img src={AdiLogo} alt="Yeezy Logo" width="64" height="" />
           </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
