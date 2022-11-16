@@ -42,16 +42,16 @@ const Cart = (props) => {
         {cartItems.map((item) => (
           <div className="border-top border-bottom" key={item.shoeId}>
             <div className="row">
-              <div className="col-sm-4">
+              <div className="container col-sm-4 mh-50 mw-50">
                 <img src={item.img} class="img-fluid p-3 mh-50 mw-50" />
               </div>
-              <div className="col-sm-5 p-3">
-                <p>{item.name}</p>
-                <p className="text-secondary lh-sm">Size: {item.size}</p>
-                <p className="text-secondary lh-sm">QTY: {item.quantity}</p>
+              <div className="col-md-5 p-3">
+                <p className="mb-2 text-start">{item.name}</p>
+                <p className="text-secondary m-0 text-start">Size: {item.size}</p>
+                <p className="text-secondary text-start">QTY: {item.quantity}</p>
               </div>
-              <div className="col-sm-3 mt-3">
-                <p>${item.price}</p>
+              <div className="col-md-3 mt-3">
+                <p className="text-md-end">${item.price}</p>
               </div>
               <button onClick={removeItem} id={item.shoeId}>
                 Remove
