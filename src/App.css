@@ -53,3 +53,10 @@
   max-width: 50px;
 }
 
+a {
+  color: rgb(15, 15, 15);
+}
+
+a:hover {
+  color: rgb(20, 20, 20);
+}
