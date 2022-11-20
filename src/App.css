@@ -49,6 +49,10 @@
   object-fit: fill;
 } 
 
+.med-box {
+  max-width: 950px;
+}
+
 .sizeBtn {
   max-width: 50px;
 }
@@ -59,4 +63,8 @@ a {
 
 a:hover {
   color: rgb(20, 20, 20);
+}
+
+.tests {
+  border: 1px solid red;
 }

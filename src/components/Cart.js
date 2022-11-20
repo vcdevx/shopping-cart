@@ -49,7 +49,7 @@ const Cart = (props) => {
   }
 
   return (
-    <div className="container-fluid row mt-5 d-flex justify-content-center">
+    <div className="container-fluid row mt-5 d-flex justify-content-center-sm">
       <div className="container col-md-8 mb-5">
         <h4>Bag</h4> <p className="text-secondary">Items {cartCount}</p>
         {cartItems.map((item) => (

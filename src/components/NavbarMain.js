@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import AdiLogo from "../images/AdiLogo.png";
 import { Link } from "react-router-dom";
 
@@ -42,11 +41,6 @@ const NavbarMain = (props) => {
             <li className="nav-item">
               <Link className="nav-link" to="/shop">
                   Shop
-              </Link>
-            </li>
-            <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                About
               </Link>
             </li>
             <li className="nav-item">
