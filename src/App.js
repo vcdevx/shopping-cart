@@ -4,6 +4,7 @@ import Nav from './components/NavbarMain'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import Cart from './components/Cart'
+import Ticker from './components/Ticker'
 import ProductDetails from './components/collection/ProductDetails';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
     <Router>
     <div className="App">
       <Nav cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount} />
+      <Ticker/>
       <Routes>
       <Route path="/" exact element={<Home />}></Route>
       <Route path="/shop" exact element={<Shop cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount}/>}/>
