@@ -7,10 +7,10 @@ const Shop = () => {
 
   return (
     <div className="container-fluid d-flex justify-content-center">
-      <div className="row row-cols-1  row-cols-md-2 row-cols-lg-3 mt-5 d-flex justify-content-center align-items-center med-box container-fluid tests">
+      <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mt-5 d-flex justify-content-center align-items-center med-box container-fluid">
       {shoeData.map((item) => (
-        <div className="">
-            <div className="card border-light mb-4" style={{ width: 18 + "rem" }} key={item.id}>
+        <div className="col-12">
+            <div className="card border-light mb-4" key={item.id}>
             <Link
             key={item.id}
             to={`/shop/${item.id}`}
